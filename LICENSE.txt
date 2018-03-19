@@ -1,0 +1,10 @@
+Schematic design is CC-BY-SA 4.0
+https://creativecommons.org/licenses/by-sa/4.0/
+
+It has elements taken from the following (but not limited to):
+	- Adafruit Feather HUZZAH with ESP8266 WiFi
+		https://www.adafruit.com/products/2821
+	- SparkFun ESP8266 Thing - Dev Board
+		https://www.sparkfun.com/products/13711
+	- SparkFun ESP8266 Thing
+		https://www.sparkfun.com/products/13231
