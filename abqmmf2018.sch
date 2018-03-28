@@ -2902,7 +2902,6 @@ SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 <part name="SUPPLY5" library="SparkFun-PowerSymbols" deviceset="VCC" device=""/>
 <part name="U$4" library="microbuilder" deviceset="3.3V" device=""/>
 <part name="JP2" library="pinhead" deviceset="PINHD-2X10" device=""/>
-<part name="R1" library="SparkFun-Resistors" deviceset="1KOHM" device="-HORIZ-1/4W-1%" value="420k"/>
 </parts>
 <sheets>
 <sheet>
@@ -2967,7 +2966,7 @@ I count 14 pinned now</text>
 <instance part="U$31" gate="G$1" x="20.32" y="233.68" rot="R270"/>
 <instance part="AMICA-NODEMCU" gate="G$1" x="38.1" y="180.34"/>
 <instance part="GND8" gate="1" x="15.24" y="154.94"/>
-<instance part="U$1" gate="G$1" x="78.74" y="193.04"/>
+<instance part="U$1" gate="G$1" x="78.74" y="205.74"/>
 <instance part="SUPPLY1" gate="G$1" x="5.08" y="203.2"/>
 <instance part="SUPPLY2" gate="G$1" x="20.32" y="251.46"/>
 <instance part="U$2" gate="G$1" x="17.78" y="205.74"/>
@@ -2984,7 +2983,6 @@ I count 14 pinned now</text>
 <instance part="SUPPLY5" gate="G$1" x="172.72" y="248.92"/>
 <instance part="U$4" gate="G$1" x="165.1" y="251.46"/>
 <instance part="JP2" gate="A" x="190.5" y="226.06"/>
-<instance part="R1" gate="G$1" x="35.56" y="231.14" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -3069,7 +3067,7 @@ I count 14 pinned now</text>
 <segment>
 <pinref part="AMICA-NODEMCU" gate="G$1" pin="3V3@1"/>
 <wire x1="55.88" y1="185.42" x2="78.74" y2="185.42" width="0.1524" layer="91"/>
-<wire x1="78.74" y1="185.42" x2="78.74" y2="190.5" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="185.42" x2="78.74" y2="203.2" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="3.3V"/>
 <pinref part="AMICA-NODEMCU" gate="G$1" pin="3V3@2"/>
 <wire x1="55.88" y1="162.56" x2="78.74" y2="162.56" width="0.1524" layer="91"/>
@@ -3092,8 +3090,8 @@ I count 14 pinned now</text>
 <net name="RESET" class="0">
 <segment>
 <pinref part="AMICA-NODEMCU" gate="G$1" pin="RST"/>
-<wire x1="20.32" y1="167.64" x2="2.54" y2="167.64" width="0.1524" layer="91"/>
-<label x="2.54" y="167.64" size="1.778" layer="95"/>
+<wire x1="20.32" y1="167.64" x2="7.62" y2="167.64" width="0.1524" layer="91"/>
+<label x="7.62" y="167.64" size="1.778" layer="95"/>
 </segment>
 <segment>
 <wire x1="210.82" y1="213.36" x2="195.58" y2="213.36" width="0.1524" layer="91"/>
@@ -3111,12 +3109,6 @@ I count 14 pinned now</text>
 <pinref part="JP2" gate="A" pin="9"/>
 <wire x1="187.96" y1="226.06" x2="172.72" y2="226.06" width="0.1524" layer="91"/>
 <label x="172.72" y="226.06" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="R1" gate="G$1" pin="1"/>
-<wire x1="35.56" y1="226.06" x2="35.56" y2="220.98" width="0.1524" layer="91"/>
-<wire x1="35.56" y1="220.98" x2="40.64" y2="220.98" width="0.1524" layer="91"/>
-<label x="38.1" y="220.98" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GPIO16" class="0">
@@ -3199,8 +3191,8 @@ I count 14 pinned now</text>
 <net name="EN" class="0">
 <segment>
 <pinref part="AMICA-NODEMCU" gate="G$1" pin="EN"/>
-<wire x1="20.32" y1="170.18" x2="2.54" y2="170.18" width="0.1524" layer="91"/>
-<label x="2.54" y="170.18" size="1.778" layer="95"/>
+<wire x1="20.32" y1="170.18" x2="7.62" y2="170.18" width="0.1524" layer="91"/>
+<label x="7.62" y="170.18" size="1.778" layer="95"/>
 </segment>
 <segment>
 <wire x1="210.82" y1="215.9" x2="195.58" y2="215.9" width="0.1524" layer="91"/>
@@ -3352,14 +3344,9 @@ I count 14 pinned now</text>
 <pinref part="SUPPLY1" gate="G$1" pin="VCC"/>
 </segment>
 <segment>
-<pinref part="D1" gate="G$1" pin="C"/>
 <pinref part="SUPPLY2" gate="G$1" pin="VCC"/>
-<wire x1="20.32" y1="246.38" x2="20.32" y2="248.92" width="0.1524" layer="91"/>
-<wire x1="20.32" y1="248.92" x2="20.32" y2="251.46" width="0.1524" layer="91"/>
-<pinref part="R1" gate="G$1" pin="2"/>
-<wire x1="20.32" y1="248.92" x2="35.56" y2="248.92" width="0.1524" layer="91"/>
-<wire x1="35.56" y1="248.92" x2="35.56" y2="236.22" width="0.1524" layer="91"/>
-<junction x="20.32" y="248.92"/>
+<pinref part="D1" gate="G$1" pin="C"/>
+<wire x1="20.32" y1="246.38" x2="20.32" y2="251.46" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="JP1" gate="A" pin="4"/>
