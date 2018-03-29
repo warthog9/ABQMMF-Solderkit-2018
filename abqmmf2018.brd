@@ -10381,7 +10381,7 @@ Sensor</text>
 <rectangle x1="28.54451875" y1="94.13875" x2="28.79851875" y2="94.20225" layer="202"/>
 <rectangle x1="28.60548125" y1="94.20225" x2="28.73501875" y2="94.26575" layer="202"/>
 <text x="40.64" y="29.21" size="1.27" layer="22" font="vector" rot="MR90">Reminder: put the battery holder on last!</text>
-<text x="51.7525" y="26.3525" size="1.27" layer="21" font="vector" rot="R270">GPIO18</text>
+<text x="51.7525" y="26.3525" size="1.27" layer="21" font="vector" rot="R270">GPIO13</text>
 <text x="41.275" y="16.51" size="1.27" layer="21" font="vector" rot="R270">GPIO9</text>
 <text x="51.435" y="17.4625" size="1.27" layer="21" font="vector" rot="R270">GPIO12</text>
 <text x="61.595" y="17.4625" size="1.27" layer="21" font="vector" rot="R270">GPIO10</text>
