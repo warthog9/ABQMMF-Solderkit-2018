@@ -3130,11 +3130,6 @@ I count 14 pinned now</text>
 <label x="60.96" y="172.72" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="114.3" y1="248.92" x2="132.08" y2="248.92" width="0.1524" layer="91"/>
-<label x="119.38" y="248.92" size="1.778" layer="95"/>
-<pinref part="S2" gate="G$1" pin="2"/>
-</segment>
-<segment>
 <wire x1="210.82" y1="220.98" x2="195.58" y2="220.98" width="0.1524" layer="91"/>
 <label x="205.74" y="220.98" size="1.778" layer="95"/>
 <pinref part="JP2" gate="A" pin="14"/>
@@ -3210,6 +3205,11 @@ I count 14 pinned now</text>
 <wire x1="187.96" y1="215.9" x2="172.72" y2="215.9" width="0.1524" layer="91"/>
 <label x="172.72" y="215.9" size="1.778" layer="95"/>
 <pinref part="JP2" gate="A" pin="17"/>
+</segment>
+<segment>
+<wire x1="114.3" y1="248.92" x2="132.08" y2="248.92" width="0.1524" layer="91"/>
+<label x="119.38" y="248.92" size="1.778" layer="95"/>
+<pinref part="S2" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="GPIO4/SDA" class="0">
