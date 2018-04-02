@@ -11169,7 +11169,9 @@ design rules under a new name.</description>
 <attribute name="NAME" x="46.99" y="10.668" size="0.6096" layer="25" font="vector" ratio="20" rot="R180" align="bottom-center"/>
 </element>
 <element name="U$31" library="Warthog9-Batteries" package="AAA3-NOHOLES" value="AAA3NOHOLES" x="35.2425" y="53.0225" rot="MR270"/>
-<element name="AMICA-NODEMCU" library="ESP12E_DEVKIT" package="ESP12E_DEVKIT" value="ESP12E_DEVKIT" x="93.98" y="17.78" rot="R90"/>
+<element name="AMICA-NODEMCU" library="ESP12E_DEVKIT" package="ESP12E_DEVKIT" value="ESP12E_DEVKIT" x="93.98" y="17.78" smashed="yes" rot="R90">
+<attribute name="NAME" x="91.44" y="24.13" size="1.778" layer="25" rot="R180"/>
+</element>
 <element name="S1" library="SparkFun-Switches" package="TACTILE_SWITCH_PTH_6.0MM" value="MOMENTARY-SWITCH-SPST-PTH-6.0MM" x="46.99" y="22.86" smashed="yes" rot="R180">
 <attribute name="PROD_ID" value=" SWCH-08441" x="46.99" y="22.86" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="SF_SKU" value="COM-00097" x="46.99" y="22.86" size="1.778" layer="27" rot="R180" display="off"/>
