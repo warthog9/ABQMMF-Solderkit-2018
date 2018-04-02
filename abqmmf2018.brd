@@ -11274,10 +11274,10 @@ design rules under a new name.</description>
 <wire x1="84.455" y1="67.31" x2="83.82" y2="66.675" width="0.3048" layer="1"/>
 <wire x1="83.82" y1="66.675" x2="82.55" y2="66.675" width="0.3048" layer="1"/>
 <via x="82.55" y="66.675" extent="1-16" drill="0.3048"/>
-<wire x1="82.55" y1="66.675" x2="82.55" y2="27.94" width="0.3048" layer="16"/>
-<wire x1="82.55" y1="27.94" x2="81.28" y2="26.67" width="0.3048" layer="16"/>
-<wire x1="81.28" y1="26.67" x2="78.74" y2="26.67" width="0.3048" layer="16"/>
-<wire x1="78.74" y1="26.67" x2="76.2" y2="29.21" width="0.3048" layer="16"/>
+<wire x1="82.55" y1="66.675" x2="82.55" y2="31.75" width="0.3048" layer="16"/>
+<wire x1="76.2" y1="29.21" x2="78.74" y2="31.75" width="0.3048" layer="1"/>
+<wire x1="78.74" y1="31.75" x2="82.55" y2="31.75" width="0.3048" layer="1"/>
+<via x="82.55" y="31.75" extent="1-16" drill="0.3048"/>
 </signal>
 <signal name="GPIO15">
 <contactref element="AMICA-NODEMCU" pad="D8"/>
@@ -11370,9 +11370,7 @@ design rules under a new name.</description>
 <wire x1="50.2412" y1="7.6581" x2="52.7431" y2="10.16" width="0.3048" layer="1"/>
 <wire x1="52.7431" y1="10.16" x2="78.74" y2="10.16" width="0.3048" layer="1"/>
 <via x="78.74" y="10.16" extent="1-16" drill="0.3048"/>
-<wire x1="78.74" y1="10.16" x2="78.74" y2="26.035" width="0.3048" layer="16"/>
-<via x="78.74" y="26.035" extent="1-16" drill="0.3048"/>
-<wire x1="78.74" y1="26.035" x2="78.74" y2="29.21" width="0.3048" layer="1"/>
+<wire x1="78.74" y1="10.16" x2="78.74" y2="29.21" width="0.3048" layer="16"/>
 </signal>
 <signal name="GPIO4/SDA">
 <contactref element="AMICA-NODEMCU" pad="D2"/>
