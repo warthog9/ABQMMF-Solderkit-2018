@@ -3296,22 +3296,12 @@ I count 14 pinned now</text>
 <label x="10.16" y="190.5" size="1.778" layer="95"/>
 <pinref part="AMICA-NODEMCU" gate="G$1" pin="SD3"/>
 </segment>
-<segment>
-<wire x1="210.82" y1="231.14" x2="195.58" y2="231.14" width="0.1524" layer="91"/>
-<label x="205.74" y="231.14" size="1.778" layer="95"/>
-<pinref part="JP2" gate="A" pin="6"/>
-</segment>
 </net>
 <net name="GPIO9" class="0">
 <segment>
 <wire x1="20.32" y1="187.96" x2="7.62" y2="187.96" width="0.1524" layer="91"/>
 <label x="10.16" y="187.96" size="1.778" layer="95"/>
 <pinref part="AMICA-NODEMCU" gate="G$1" pin="SD2"/>
-</segment>
-<segment>
-<wire x1="187.96" y1="213.36" x2="172.72" y2="213.36" width="0.1524" layer="91"/>
-<label x="172.72" y="213.36" size="1.778" layer="95"/>
-<pinref part="JP2" gate="A" pin="19"/>
 </segment>
 </net>
 <net name="VCC" class="0">
