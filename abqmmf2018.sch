@@ -2890,8 +2890,6 @@ SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 <part name="SUPPLY2" library="SparkFun-PowerSymbols" deviceset="VCC" device=""/>
 <part name="U$2" library="microbuilder" deviceset="3.3V" device=""/>
 <part name="S1" library="SparkFun-Switches" deviceset="MOMENTARY-SWITCH-SPST" device="-PTH-6.0MM"/>
-<part name="S4" library="SparkFun-Switches" deviceset="MOMENTARY-SWITCH-SPST" device="-PTH-6.0MM"/>
-<part name="S5" library="SparkFun-Switches" deviceset="MOMENTARY-SWITCH-SPST" device="-PTH-6.0MM"/>
 <part name="U$3" library="Warthog9-Screens" deviceset="OLED-0.96" device="I2C-4PIN"/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="JP1" library="pinhead" deviceset="PINHD-1X4" device=""/>
@@ -2960,7 +2958,7 @@ I count 14 pinned now</text>
 <instance part="D3" gate="G$1" x="55.88" y="248.92"/>
 <instance part="U$14" gate="G$1" x="55.88" y="256.54"/>
 <instance part="R10" gate="G$1" x="55.88" y="236.22" rot="R90"/>
-<instance part="GND5" gate="1" x="96.52" y="208.28"/>
+<instance part="GND5" gate="1" x="96.52" y="223.52"/>
 <instance part="S2" gate="G$1" x="109.22" y="248.92"/>
 <instance part="S3" gate="G$1" x="109.22" y="238.76"/>
 <instance part="U$31" gate="G$1" x="20.32" y="233.68" rot="R270"/>
@@ -2971,8 +2969,6 @@ I count 14 pinned now</text>
 <instance part="SUPPLY2" gate="G$1" x="20.32" y="251.46"/>
 <instance part="U$2" gate="G$1" x="17.78" y="205.74"/>
 <instance part="S1" gate="G$1" x="109.22" y="259.08"/>
-<instance part="S4" gate="G$1" x="109.22" y="228.6"/>
-<instance part="S5" gate="G$1" x="109.22" y="218.44"/>
 <instance part="U$3" gate="G$1" x="111.76" y="175.26"/>
 <instance part="GND1" gate="1" x="142.24" y="175.26"/>
 <instance part="JP1" gate="A" x="96.52" y="152.4" rot="R180"/>
@@ -3020,20 +3016,12 @@ I count 14 pinned now</text>
 <wire x1="96.52" y1="259.08" x2="96.52" y2="248.92" width="0.1524" layer="91"/>
 <pinref part="S2" gate="G$1" pin="1"/>
 <wire x1="96.52" y1="248.92" x2="96.52" y2="238.76" width="0.1524" layer="91"/>
-<wire x1="96.52" y1="238.76" x2="96.52" y2="228.6" width="0.1524" layer="91"/>
-<wire x1="96.52" y1="228.6" x2="96.52" y2="218.44" width="0.1524" layer="91"/>
-<wire x1="96.52" y1="218.44" x2="96.52" y2="210.82" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="238.76" x2="96.52" y2="226.06" width="0.1524" layer="91"/>
 <wire x1="104.14" y1="248.92" x2="96.52" y2="248.92" width="0.1524" layer="91"/>
 <junction x="96.52" y="248.92"/>
 <pinref part="S3" gate="G$1" pin="1"/>
 <wire x1="104.14" y1="238.76" x2="96.52" y2="238.76" width="0.1524" layer="91"/>
 <junction x="96.52" y="238.76"/>
-<pinref part="S4" gate="G$1" pin="1"/>
-<wire x1="104.14" y1="228.6" x2="96.52" y2="228.6" width="0.1524" layer="91"/>
-<junction x="96.52" y="228.6"/>
-<pinref part="S5" gate="G$1" pin="1"/>
-<wire x1="104.14" y1="218.44" x2="96.52" y2="218.44" width="0.1524" layer="91"/>
-<junction x="96.52" y="218.44"/>
 </segment>
 <segment>
 <pinref part="U$3" gate="G$1" pin="GND"/>
@@ -3309,11 +3297,6 @@ I count 14 pinned now</text>
 <pinref part="AMICA-NODEMCU" gate="G$1" pin="SD3"/>
 </segment>
 <segment>
-<pinref part="S5" gate="G$1" pin="2"/>
-<wire x1="114.3" y1="218.44" x2="132.08" y2="218.44" width="0.1524" layer="91"/>
-<label x="119.38" y="218.44" size="1.778" layer="95"/>
-</segment>
-<segment>
 <wire x1="210.82" y1="231.14" x2="195.58" y2="231.14" width="0.1524" layer="91"/>
 <label x="205.74" y="231.14" size="1.778" layer="95"/>
 <pinref part="JP2" gate="A" pin="6"/>
@@ -3324,11 +3307,6 @@ I count 14 pinned now</text>
 <wire x1="20.32" y1="187.96" x2="7.62" y2="187.96" width="0.1524" layer="91"/>
 <label x="10.16" y="187.96" size="1.778" layer="95"/>
 <pinref part="AMICA-NODEMCU" gate="G$1" pin="SD2"/>
-</segment>
-<segment>
-<pinref part="S4" gate="G$1" pin="2"/>
-<wire x1="114.3" y1="228.6" x2="132.08" y2="228.6" width="0.1524" layer="91"/>
-<label x="119.38" y="228.6" size="1.778" layer="95"/>
 </segment>
 <segment>
 <wire x1="187.96" y1="213.36" x2="172.72" y2="213.36" width="0.1524" layer="91"/>
