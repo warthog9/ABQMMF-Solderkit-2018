@@ -11283,7 +11283,6 @@ design rules under a new name.</description>
 </signal>
 <signal name="GPIO15">
 <contactref element="AMICA-NODEMCU" pad="D8"/>
-<contactref element="S2" pad="3"/>
 <contactref element="JP2" pad="14"/>
 <wire x1="100.33" y1="27.94" x2="100.33" y2="10.16" width="0" layer="19" extent="1-16"/>
 <wire x1="80.645" y1="72.0725" x2="80.645" y2="71.755" width="0.3048" layer="16"/>
