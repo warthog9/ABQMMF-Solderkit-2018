@@ -2312,7 +2312,7 @@ SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 </library>
 <library name="Warthog9-Screens">
 <packages>
-<package name="OLED-I2C-4PIN">
+<package name="OLED-I2C-4PIN-VCCGND-REV">
 <description>&lt;h3&gt;Plated Through Hole - 4 Pin Long Pads&lt;/h3&gt;
 &lt;p&gt;Specifications:
 &lt;ul&gt;&lt;li&gt;Pin count:4&lt;/li&gt;
@@ -2362,12 +2362,12 @@ SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 <wire x1="-2.54" y1="14.315" x2="-2.54" y2="10.505" width="0.2032" layer="21"/>
 <wire x1="0" y1="14.315" x2="0" y2="10.505" width="0.2032" layer="21"/>
 <wire x1="2.54" y1="14.315" x2="2.54" y2="10.505" width="0.2032" layer="21"/>
-<text x="-3.175" y="6.195" size="1.27" layer="21" rot="R90">VCC</text>
-<text x="-0.635" y="6.195" size="1.27" layer="21" rot="R90">GND</text>
+<text x="-0.635" y="6.195" size="1.27" layer="21" rot="R90">VCC</text>
+<text x="-3.175" y="6.195" size="1.27" layer="21" rot="R90">GND</text>
 <text x="1.905" y="6.195" size="1.27" layer="21" rot="R90">SCL</text>
 <text x="4.445" y="6.195" size="1.27" layer="21" rot="R90">SDA</text>
-<text x="-4.445" y="6.195" size="1.27" layer="22" rot="MR90">VCC</text>
-<text x="-1.905" y="6.195" size="1.27" layer="22" rot="MR90">GND</text>
+<text x="-1.905" y="6.195" size="1.27" layer="22" rot="MR90">VCC</text>
+<text x="-4.445" y="6.195" size="1.27" layer="22" rot="MR90">GND</text>
 <text x="0.635" y="6.195" size="1.27" layer="22" rot="MR90">SCL</text>
 <text x="3.175" y="6.195" size="1.27" layer="22" rot="MR90">SDA</text>
 <wire x1="-13.65" y1="13.9" x2="-5.08" y2="13.9" width="0.2032" layer="21"/>
@@ -2383,9 +2383,9 @@ SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 </package>
 </packages>
 <symbols>
-<symbol name="I2C-OLED">
-<pin name="VCC" x="5.08" y="10.16" length="middle" rot="R180"/>
-<pin name="GND" x="5.08" y="7.62" length="middle" rot="R180"/>
+<symbol name="I2C-OLED-VCCGND-REV">
+<pin name="GND" x="5.08" y="10.16" length="middle" rot="R180"/>
+<pin name="VCC" x="5.08" y="7.62" length="middle" rot="R180"/>
 <pin name="SCL" x="5.08" y="5.08" length="middle" rot="R180"/>
 <pin name="SDA" x="5.08" y="2.54" length="middle" rot="R180"/>
 <wire x1="-15.24" y1="12.7" x2="-15.24" y2="0" width="0.254" layer="94"/>
@@ -2399,18 +2399,18 @@ SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="OLED-0.96">
+<deviceset name="OLED-0.96-VCCGND-REV">
 <description>Common 0.96 OLED screen assembly</description>
 <gates>
-<gate name="G$1" symbol="I2C-OLED" x="15.24" y="0"/>
+<gate name="G$1" symbol="I2C-OLED-VCCGND-REV" x="0" y="0"/>
 </gates>
 <devices>
-<device name="I2C-4PIN" package="OLED-I2C-4PIN">
+<device name="" package="OLED-I2C-4PIN-VCCGND-REV">
 <connects>
-<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="GND" pad="1"/>
 <connect gate="G$1" pin="SCL" pad="3"/>
 <connect gate="G$1" pin="SDA" pad="4"/>
-<connect gate="G$1" pin="VCC" pad="1"/>
+<connect gate="G$1" pin="VCC" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -2890,7 +2890,7 @@ SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 <part name="SUPPLY2" library="SparkFun-PowerSymbols" deviceset="VCC" device=""/>
 <part name="U$2" library="microbuilder" deviceset="3.3V" device=""/>
 <part name="S1" library="SparkFun-Switches" deviceset="MOMENTARY-SWITCH-SPST" device="-PTH-6.0MM"/>
-<part name="U$3" library="Warthog9-Screens" deviceset="OLED-0.96" device="I2C-4PIN"/>
+<part name="U$3" library="Warthog9-Screens" deviceset="OLED-0.96-VCCGND-REV" device=""/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="JP1" library="pinhead" deviceset="PINHD-1X4" device=""/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
@@ -3024,12 +3024,6 @@ I count 14 pinned now</text>
 <junction x="96.52" y="238.76"/>
 </segment>
 <segment>
-<pinref part="U$3" gate="G$1" pin="GND"/>
-<wire x1="116.84" y1="182.88" x2="142.24" y2="182.88" width="0.1524" layer="91"/>
-<wire x1="142.24" y1="182.88" x2="142.24" y2="177.8" width="0.1524" layer="91"/>
-<pinref part="GND1" gate="1" pin="GND"/>
-</segment>
-<segment>
 <pinref part="JP1" gate="A" pin="3"/>
 <pinref part="GND2" gate="1" pin="GND"/>
 <wire x1="99.06" y1="152.4" x2="129.54" y2="152.4" width="0.1524" layer="91"/>
@@ -3044,6 +3038,12 @@ I count 14 pinned now</text>
 <wire x1="170.18" y1="228.6" x2="170.18" y2="210.82" width="0.1524" layer="91"/>
 <wire x1="187.96" y1="228.6" x2="170.18" y2="228.6" width="0.1524" layer="91"/>
 <junction x="170.18" y="228.6"/>
+</segment>
+<segment>
+<pinref part="U$3" gate="G$1" pin="GND"/>
+<pinref part="GND1" gate="1" pin="GND"/>
+<wire x1="116.84" y1="185.42" x2="142.24" y2="185.42" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="185.42" x2="142.24" y2="177.8" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="3.3V" class="0">
@@ -3323,16 +3323,16 @@ I count 14 pinned now</text>
 <wire x1="111.76" y1="154.94" x2="111.76" y2="160.02" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$3" gate="G$1" pin="VCC"/>
-<wire x1="116.84" y1="185.42" x2="121.92" y2="185.42" width="0.1524" layer="91"/>
-<wire x1="121.92" y1="185.42" x2="121.92" y2="190.5" width="0.1524" layer="91"/>
-<pinref part="SUPPLY4" gate="G$1" pin="VCC"/>
-</segment>
-<segment>
 <pinref part="JP2" gate="A" pin="1"/>
 <pinref part="SUPPLY5" gate="G$1" pin="VCC"/>
 <wire x1="187.96" y1="236.22" x2="172.72" y2="236.22" width="0.1524" layer="91"/>
 <wire x1="172.72" y1="236.22" x2="172.72" y2="248.92" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$3" gate="G$1" pin="VCC"/>
+<pinref part="SUPPLY4" gate="G$1" pin="VCC"/>
+<wire x1="116.84" y1="182.88" x2="121.92" y2="182.88" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="182.88" x2="121.92" y2="190.5" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$1" class="0">
