@@ -148,12 +148,12 @@
 </layers>
 <board>
 <plain>
-<text x="87.3125" y="23.495" size="1.27" layer="22" rot="MR180">(C) John 'Warthog9' Hawley 2018
+<text x="87.3125" y="23.495" size="1.27" layer="22" rot="MR180">(C) John 'Warthog9' Hawley 2019
 CC-BY-SA
 
 Artwork by Dr. Terri Oda
 
-Board Version: 1.1</text>
+Board Version: 1.2</text>
 <text x="93.0275" y="35.56" size="1.778" layer="21">VIN</text>
 <text x="93.0275" y="37.465" size="1.778" layer="22" rot="MR180">VIN</text>
 <text x="92.075" y="40.005" size="1.778" layer="22" rot="MR180">GND</text>
