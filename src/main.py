@@ -34,9 +34,7 @@ pin_led_node=16
 pin_led_esp12=2
 
 button_pin_up=13
-button_pin_right=10
 button_pin_down=5
-button_pin_left=9
 button_pin_middle=12
 
 
@@ -51,12 +49,10 @@ led_esp12 = Signal(_pin_led_esp12, invert=True)
 leds = [ led_board, led_node, led_esp12 ]
 
 pin_button_up     = machine.Pin( button_pin_up,     machine.Pin.IN, machine.Pin.PULL_UP )
-pin_button_right  = machine.Pin( button_pin_right,  machine.Pin.IN, machine.Pin.PULL_UP )
 pin_button_down   = machine.Pin( button_pin_down,   machine.Pin.IN, machine.Pin.PULL_UP )
-pin_button_left   = machine.Pin( button_pin_left,   machine.Pin.IN, machine.Pin.PULL_UP )
 pin_button_middle = machine.Pin( button_pin_middle, machine.Pin.IN, machine.Pin.PULL_UP )
 
-buttons = [ pin_button_up, pin_button_right, pin_button_down, pin_button_left, pin_button_middle ]
+buttons = [ pin_button_up, pin_button_down, pin_button_middle ]
 
 #####################
 # Real Code goes after here
@@ -362,8 +358,6 @@ def cb_LEDTOG( pin ):
 pin_button_up.irq( trigger=machine.Pin.IRQ_FALLING, handler=cb_adjustBrightnessUp)
 pin_button_down.irq( trigger=machine.Pin.IRQ_FALLING, handler=cb_adjustBrightnessDown)
 pin_button_middle.irq( trigger=machine.Pin.IRQ_FALLING, handler=cb_switchCF)
-pin_button_left.irq( trigger=machine.Pin.IRQ_FALLING, handler=cb_switchText)
-pin_button_right.irq( trigger=machine.Pin.IRQ_FALLING, handler=cb_LEDTOG)
 
 while( True ):
     bme_data = bme.read_compensated_data()
