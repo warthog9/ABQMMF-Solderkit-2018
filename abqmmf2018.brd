@@ -10383,7 +10383,7 @@ Sensor</text>
 <text x="40.64" y="29.21" size="1.27" layer="22" font="vector" rot="MR90">Reminder: put the battery holder on last!</text>
 <text x="51.7525" y="26.3525" size="1.27" layer="21" font="vector" rot="R270">GPIO13</text>
 <text x="51.435" y="17.4625" size="1.27" layer="21" font="vector" rot="R270">GPIO12</text>
-<text x="51.435" y="8.89" size="1.27" layer="21" font="vector" rot="R270">GPIO15</text>
+<text x="51.435" y="8.89" size="1.27" layer="21" font="vector" rot="R270">GPIO5</text>
 <text x="65.405" y="73.3425" size="0.8128" layer="21" font="vector" rot="R45">TXD</text>
 <text x="67.945" y="73.3425" size="0.8128" layer="21" font="vector" rot="R45">RXD</text>
 <text x="73.025" y="73.3425" size="0.8128" layer="21" font="vector" rot="R45">IO12</text>
